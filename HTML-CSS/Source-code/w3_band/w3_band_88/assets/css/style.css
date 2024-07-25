@@ -1,0 +1,175 @@
+/*Reset CSS*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+        top: 0px;
+    background-color: #000;
+    height: 46px;
+    min-width: 100%;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, 
+.subnav {
+    list-style-type: none;
+
+}
+
+#nav .nav-angle-down {
+    font-size: 14px;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+        top: 100%;
+        left: 0px;
+    display: none;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0px 12px;
+    line-height: 38px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0px 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+
+}
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url(/assets/img/slider/chicago.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+#slider .text-content {
+    position: absolute;
+        bottom: 47px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content {
+
+}
+
+#content .content-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 10px 0px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content #about-text {
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 1.4;
+
+}
+
+#footer {
+
+}

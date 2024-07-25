@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Script 5">
+  <test thread-count="5" name="Add Products and Check">
+    <classes>
+    	<class name="admintest.AdminAddProductTest"/>
+    </classes>
+  </test> <!-- addAndCheck -->
+</suite> <!-- Suite -->
+

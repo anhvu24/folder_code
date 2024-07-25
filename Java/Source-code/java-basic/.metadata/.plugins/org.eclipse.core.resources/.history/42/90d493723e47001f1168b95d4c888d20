@@ -1,0 +1,15 @@
+
+public class ThuNgay {
+
+	public static void main(String[] args) {
+		int max = 5;
+		for (int i = 0; i <= max; i++) {
+			 System.out.println("asdasdasd");
+			if (i == 3) {
+				continue loop;
+			}
+			loop: System.out.println("i = " + i);
+		}
+
+	}
+}

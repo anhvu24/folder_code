@@ -1,0 +1,21 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ThuNgay {
+
+	public static void main(String[] args) {
+		int in = 0, out = 0;
+
+		for (out = 0; out <= 10; out++) {
+			for (in = 0; in <= 5; in++) {
+				System.out.println("in = " + in);
+				if (in == 3) {
+					break;
+				}
+			}
+			System.out.println("trong out: " + "out = " + out + ", " + "in = " + in);
+		}
+		
+		System.out.println("ngoài out: " + "out = " + out + ", " + "in = " + in);
+	}
+}

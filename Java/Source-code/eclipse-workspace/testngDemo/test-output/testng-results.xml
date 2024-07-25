@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-11T16:58:10 ICT" name="Suite" finished-at="2021-10-11T16:58:10 ICT" duration-ms="55">
+    <groups>
+    </groups>
+    <test started-at="2021-10-11T16:58:10 ICT" name="Test" finished-at="2021-10-11T16:58:10 ICT" duration-ms="55">
+      <class name="demo.thunghiem">
+        <test-method signature="c()[pri:0, instance:demo.thunghiem@6497b078]" started-at="2021-10-11T16:58:10 ICT" name="c" finished-at="2021-10-11T16:58:10 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+        <test-method signature="a()[pri:0, instance:demo.thunghiem@6497b078]" started-at="2021-10-11T16:58:10 ICT" name="a" finished-at="2021-10-11T16:58:10 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="b()[pri:0, instance:demo.thunghiem@6497b078]" started-at="2021-10-11T16:58:10 ICT" name="b" finished-at="2021-10-11T16:58:10 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method signature="d()[pri:0, instance:demo.thunghiem@6497b078]" started-at="2021-10-11T16:58:10 ICT" name="d" finished-at="2021-10-11T16:58:10 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d -->
+      </class> <!-- demo.thunghiem -->
+      <class name="demo.FirstClass">
+        <test-method signature="asecondTest()[pri:0, instance:demo.FirstClass@3541cb24]" started-at="2021-10-11T16:58:10 ICT" name="asecondTest" finished-at="2021-10-11T16:58:10 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asecondTest -->
+        <test-method signature="firstTest()[pri:0, instance:demo.FirstClass@3541cb24]" started-at="2021-10-11T16:58:10 ICT" name="firstTest" finished-at="2021-10-11T16:58:10 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- demo.FirstClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,83 @@
+Kéo repo về -> code -> đẩy code lên 
+0. Đã có repo ở github
+1. Clone repo - git clone link_repo
+2. Viết code
+3. Đẩy code mới lên
+git status (ktra trạng thái file)
+git add . (thêm file)
+git status (ktra trạng thái lần nữa)
+git commit -m "write message" (tạo nội dung commit)
+git push origin main
+
+
+
+Đã có project ở local -> đẩy code lên
+0. Tạo repo ở git
+1. git init (mục đích để khởi tạo thư mục .git trong folder)
+2. Viết code
+3. Đẩy code mới lên
+git status
+git add .
+git commit -m "..."
+git remote add origin http//...
+git push origin master
+
+
+
+
+kiểm tra có những nhánh nào: git branch
+tạo nhánh mới: git checkout -b tên nhánh mới
+
+kiểm tra file ở máy đang thuộc remote nào: git remote -v
+
+
+
+-------------------------------
+
+Tạo local branch
+1. tạo, chuyển tách nhau
+tạo: $ git branch <branch-name>
+chuyển: $ git checkout <branch-name>
+
+2. tạo, chuyển kết hợp
+$ git checkout -b <branch-name>
+
+-------------------------------
+Xóa local branch
+$ git branch -d branch_name
+
+
+-------------------------------
+merge code 2 cách:
+- c1: git merge 
+- c2: "Compare & pull request" trên giao diện Github
+
+
+
+
+Quy trình cty
+1. fork từ repo cty
+2. clone từ repo (fork) về
+3. code & đẩy code
+- ở repo (fork) tạo nhánh mới cho chức năng mới
+- code búa xua chi đó ở local 
+- đẩy lên nhánh mới thuộc repo (fork)
+4. Tạo PR: nhánh mới thuộc repo (fork) -> repo cty
+5. Trước khi code chức năng mới thì pull code về từ repo cty
+- tạo remote nối từ repo cty về local 
+- pull theo remote đó 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

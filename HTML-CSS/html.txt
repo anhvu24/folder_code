@@ -1,0 +1,85 @@
+1 file html chỉ có 1 thẻ html
+
+
+8. Cấu trúc của 1 file HTML
+thêm thẻ <meta charset="utf-8"> vào <HEAD> để hỗ trợ tiếng việt cho website
+
+11. Comment trong HTML
+- Ctrl + /
+- Mục đích:
++ ghi chú
++ cmt code
+
+13. Các thẻ HTML thông dụng
+	1. h1 - h6 (heading: tiêu đề)
+- từ h1 -> h6 chữ sẽ nhỏ lại dần
+- thường sử dụng duy nhất 1 thẻ h1 trong 1 file HTML
+
+	2. p (paragraph: đoạn văn)
+- hiển thị đoạn văn
+
+	3. img (image: hình ảnh)
+- src - source: nguồn file ảnh
+- alt: ko bắt buộc, hiển thị khi ảnh bị lỗi
+
+	4. a (anchor: neo liên kết)
+- gắn đường dẫn
+
+	5. ul, li (unordered list, list item)
+hiển thị danh sách dạng gạch đầu dòng
+- dùng hiển thị dạng danh sách
+- trong 1 thẻ <ul> có nhiều thẻ <li>
+- để hiển thị danh sách dạng số thứ tự: ul -> ol
+
+	6. table
+- sử dụng để kẻ bảng
+- table gồm 
+<thead> (phần đầu) 
+	<th>...</th> (table heading)
+	<th>...</th>
+</thead>
+
+<tbody> (phần thân)
+	<tr> (table round - dòng)
+		<td>...</td> (td sẽ tương ứng với th)
+		<td>...</td>
+	</tr>
+
+	<tr> 
+		<td>...</td> 
+		<td>...</td>
+	</tr>
+</tbody>
+
+	7. input
+- type = text: sinh ra textbox để nhập chữ
+- type = checkbox: sinh ra checkbox
+- type = radio: sinh ra radio
++ nguyên tắc radio chỉ chọn được 1 gtri
++ muốn radio chỉ chọn đc 1 giá trị -> đặt cùng NAME
+
+	8. button
+	
+	9. div
+- mục đích: tạo khối bao quanh các phần tử khác
+
+
+18. Attribute trong HTML
+    <body>
+        <h1 title="đây là tiêu đề">Attribute?</h1>
+
+    </body>
+
+->> title="đây là tiêu đề" chính là attibute
+- attibute nằm trong thẻ mở
+
+
+
+
+
+
+
+
+
+
+

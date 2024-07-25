@@ -1,0 +1,251 @@
+từ vựng:
+- attribute (n): thuộc tính
+- margin (n): khoảng cách lề
+- padding (n): vùng đệm 
+- align (v): căn chỉnh 
+
+-----------------
+
+22. Sử dụng CSS trong HTML
+- internal: sử dụng thẻ <style> đặt ở BẤT CỨ ĐÂU trong file HTML và viết CSS trong thẻ <style> đó
+- external: viết riêng ra 1 file bên ngoài sau đó link qa file HTML
+  . kiểm tra link css thành công hay chưa: f12 > source > ...
+- inline: viết vào thẻ mở, sử dụng attribute "style"
+
+
+24. ID và Class
+- CSS selector là cách để gọi đến các element trong HTML để có thể CSS
+ID: 
+- ko được trùng nhau (vẫn có thể trùng nhưng sai nguyên tắc và Javascript lỗi)
+- select đến ID -> sử dụng #
+Class
+- sử dụng khi muốn dùng CSS chung cho nhiều đối tượng khác nhau
+- select đến Class -> sử dụng .
+
+
+30. mức độ ưu tiên trong CSS
+- Internal, External: gọi sau được ưu tiên hơn
+- Inline - 1000
+- #id - 100
+- .class - 10
+- .tag - 1 (gọi tên thẻ)
+nhiều điểm hơn là được ưu tiên
+
+
+32. Sử dụng biến trong CSS
+- Cú pháp biến: vd: --text-color
+- Công dụng: sửa 1 chỗ có thể áp dụng cho nhiều chỗ
+- 2 kiểu đặt biến: global và local
+global: đặt biến trong :root{} --> áp dụng cho tất cả
+local: đặt biến trong selector cụ thể --> chỉ áp dụng cho selector đó 
+
+
+35. Các đơn vị trong CSS
+- Absolute unit: px, pt, cm, mm, inch, pc - kích thước giữ nguyên mặc dù các yếu tố xung quanh thay đổi vd: kích thước trình duyệt
+- Relative unit: %, rem, em, vw, wh, vmin 
+- các đơn vị tương đối (relative unit) cần có 1 nơi để phụ thuộc, cụ thể là thẻ chứa nó
+- mặc định thẻ body sẽ có width bằng kích thước cửa sổ trình duyệt
+
+px: 
+- màn hình độ phân giải thấp -> 1px ở CSS = 1 điểm ảnh trên màn hình
+- màn hình độ phân giải cao -> 1px ở CSS = nhiều điểm ảnh trên màn hình
+
+%: tỉ lệ vào thẻ mà nó phụ thuộc, mặc định là thẻ cha trực tiếp của nó
+- mặc định 100% = 16px
+- để một thẻ có thể đặt height theo % thì thẻ nó phụ thuộc phải có một chiều cao mang tính cố định.
+
+rem: phụ thuộc vào thẻ <html>
+- mặc định font-size: 1rem = 16px, đây là trường hợp ko có thẻ html ko có CSS
+
+em: phụ thuộc vào thẻ gần nhất chứa nó
+
+vw (viewport width)
+- 1vw = 1% chiều ngang trình duyệt
+
+vh (viewport heigh)
+- 1vh = 1% chiều dọc trình duyệt
+
+
+37. Reset margin được đặt mặc định
+Không chỉ thẻ body, một số thẻ thông dụng như h1-h6, p cũng có margin mặc định. 
+Trong thực tế, điều này thường tạo ra những khoảng trắng ngoài ý muốn. 
+Để khắc phục chúng ta sẽ Reset CSS
+
+- margin mặc định = 8px
+- Sử dụng * selector, vì nó tác động lên mọi thẻ, vì vậy chúng ta có thể reset cho mọi thẻ:
+* {
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+}
+
+
+41. Vấn đề khi sử dụng px cho font-size
+- khi sửa kích cỡ thì phải sửa ở nhiều chỗ 
+-> giải pháp: dùng rem cho font-size
+
+
+43. Một số hàm trong CSS
+var()
+- Công dụng: chèn giá trị của một biến trong CSS
+
+
+46. Lớp giả (pseudo class)
+- cú pháp: :tên-lớp-giả
+- :root
+- :hover -> đc kích hoạt khi hover vào
+- :active -> đc kích hoạt khi bấm giữ
+- :first-child -> thường dùng sử lí <li> đầu danh sách
+- :last-child -> thường dùng sử lí <li> cuối danh sách
+
+
+48. Phần tử giả (pseudo element)
+- cú pháp: ::tên-phần-tử-giả
+- ::before 
+bên trong luôn phải có thuộc tính "content"
+- ::after
+bên trong luôn phải có thuộc tính "content"
+- ::first-letter -> chữ cái đầu
+- ::first-line -> dòng đầu
+- ::selection -> chọn
+
+
+51. padding (đệm)
+- padding là khoảng đệm giữa content và border (viền)
+- padding và border đều tăng tổng kịch thước của element
+
+
+54. border (viền)
+- kích thước mặc định của border = 3px --> muốn set border cho 1 phía thì phải set các phía còn lại có border-width = 0px
+- Cách viết ngắn border:
+border: 10px solid #333;
+	(width - style - color)
+
+
+56. margin (khoảng cách lề)
+- khác nhau vs 2 ông trên: padding và border chỉ làm tăng kích thước chỉnh element chứ ko làm tăng khoảng cách giữa các element 
+
+
+58. Thuộc tính box-sizing
+- mặc định box-sizing: content-box
+- box-sizing: border-box -> để cố định kích thước box ko bị thay đổi khi có padding hoặc border
+
+					
+						------> Thuộc tính tạo nền (60 - 68) <------
+60. Thuộc tính background
+	background-image: 
+url(): dùng ảnh trên mạng làm nền
+- nếu muốn nhiều hình thì cho nhiều url()
+- url() nào viết trước thì nằm trên
+linear-gradient(): dùng màu làm nền
+
+	background-size: 
+- kích thước ngang - kích thước dọc
+- background-size: contain -> background sẽ được căn chỉnh để có thể chứa được trong size của thẻ
+- background-size: cover -> background sẽ được căn chỉnh cho full hết size của thẻ, bất chấp ảnh có thể bị cắt xén
+
+	background-repeat
+- mặc định là repeat
+- no-repeat: ko lặp
+- repeat-x: lặp theo chiều ngang
+- repeat-y: lặp theo chiều dọc
+
+
+64. Thuộc tính background
+	background-origin
+- mặc định là padding-box
+- background-origin: padding-box -> background đổ từ padding vào 
+- background-origin: border-box -> background đổ từ border vào
+- background-origin: content-box -> background đổ từ content vào
+
+
+
+66. Thuộc tính background
+	background-position
+- cú pháp: 
++ số: background-position: x(trục ngang) y(trục dọc)
++ chữ: background-position: top right -> background được đặt sát phía trên, bên phải
++ chữ + số: background-position: top 10px right 20px -> background được đặt sát phía trên cách 10px, bên phải cách 20px
+If you only specify one keyword, the other value will be "center"
+
+
+
+68. Cú pháp "shorthand" cho background
+cú pháp: background: url(image.png) center / contain no-repeat
+- center = background-position
+- / contain = background-size (Thuộc tính background-size phải có dấu gạch chéo ở trước)
+- no-repeat = background-repeat 
+
+
+						------> Thuộc tính vị trí (71 - 78) <------
+71. Thuộc tính position 
+- relative: vị trí tương đối
+- absolute: vị trí tuyệt đối 
+- fixed: vị trí phụ thuộc vào khung trình duyệt
+- sticky: vị trí bám dính (ko khuyến khích dùng vì nhiều trình duyệt ko hỗ trợ)
+
+	position: relative (tương đối)
+- vị trí ko phụ thuộc vào đối tượng nào khác
+- lấy đúng vị trí đang đứng làm gốc tọa độ
+- cú pháp:
+     {
+	position: relative
+	top: 10px -> sát phía trên, cách 10px
+	right: 20px
+     }
+- top, bottom, right, left chỉ hoạt động khi có position
+
+
+
+73. Thuộc tính position 
+	position: absolute (tuyệt đối)
+- dùng khi một đối tượng phụ thuộc vào đối tượng khác
+- vị trí bị phụ thuộc vào thẻ cha gần nhất có thuộc tính position
+- lấy vị trí thẻ cha đang đứng làm gốc tọa độ
+- Mục đích khi dùng: di chuyển vị trí của đối tượng con xung quanh đối tượng cha
+
+
+
+75. Thuộc tính position
+	position: fixed (cố định)
+- dùng khi một đối tượng phụ thuộc vào cửa sổ trình duyệt
+- vd: muốn header được cố định sát ở trên cùng
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+}
+
+
+77. Thuộc tính position
+	position: sticky (dính)
+- thường dùng làm menu, header, navbar bám dính
+- vd: muốn menu được bám dính ở trên cùng khi cuộn trang
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    margin-top: 30px;
+    position: sticky;
+    top: 0; (vd top: 10px thì cuộn menu cách trên cùng 10px thì bám dính)
+}
+
+
+78. Các cách căn giữa trong CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

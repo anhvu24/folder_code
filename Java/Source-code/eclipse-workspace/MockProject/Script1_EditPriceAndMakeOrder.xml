@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Script1">
+  <test thread-count="2" parallel="classes" name="Admin change price while User making order">
+    <classes>
+      <class name="test.script1.AdminEditPriceTest"></class>
+      <class name="test.script1.UserMakeOrderTest"></class>
+    </classes>
+  </test>
+  
+   <test name = "Check price after order">
+    <classes>
+      <class name="test.script1.AdminCheckOrderTest"></class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

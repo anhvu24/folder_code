@@ -1,0 +1,13 @@
+.header{
+    width: 50%;
+    height: 100px;
+    background-color: violet;
+    position: fixed;
+    top: 0;
+}
+
+.list{
+    height: 1000px;
+    border: 1px solid red;
+    margin-top: 100px;
+}

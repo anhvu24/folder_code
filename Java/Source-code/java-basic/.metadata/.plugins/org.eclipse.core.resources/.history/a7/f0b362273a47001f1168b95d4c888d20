@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class ThuNgay {
+
+	public static void main(String[] args) {
+		int in, out = 0;
+		
+		for (out = 0; out < 10; out++) {
+			System.out.println(out);
+		}
+		
+	}
+}

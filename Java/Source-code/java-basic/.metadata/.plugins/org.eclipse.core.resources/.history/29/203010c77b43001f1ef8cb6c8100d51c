@@ -1,0 +1,13 @@
+
+public class Hello_2 {
+	public static void main(String[] args) {
+		String tenSach = "Lap trinh Java";
+		int namXuatBan = 2021;
+		double giaBan = 300.3;
+		boolean conSach = true;
+		char maKho = 'M';
+		
+		
+		
+	}
+}

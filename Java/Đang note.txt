@@ -1,0 +1,21 @@
+- Biến chỉ được sử dụng cục bộ bên trong khối lệnh của hàm, trong khi thuộc tính được sử dụng toàn cục.
+
+Một số nguyên tắc khi khai báo kiểu_trả_về của một phương thức:
+-Nếu như phương thức có khai báo kiểu_trả_về, thì hiển nhiên phương thức đó phải kết thúc với một hoặc nhiều câu lệnh return. Nếu không có return đối với phương thức này, hệ thống sẽ báo lỗi đấy nhé.
+-kiểu_trả_về của phương thức phải cùng kiểu với biểu thức (hoặc giá trị) sau câu lệnh return, như bạn đã thấy ở ví dụ trên. Nếu khác nhau về kiểu, sẽ bị báo lỗi luôn.
+-Bạn có thể ép kiểu tường minh một biểu thức (hoặc giá trị) trước khi return nó
+
+CONSTRUCTOR:
+- Constructor cùng tên với lớp (class)
+– Trong một lớp, bạn hoàn toàn có thể có nhiều constructor, mỗi constructor như vậy phải khác tham số truyền vào
+– Với một lớp có nhiều constructor, bạn hoàn toàn có thể từ constructor này gọi đến constructor khác,
+...còn nữa mà chưa bỏ zô đó, nhớ coi lại rồi bỏ vào thêm
+
+KẾ THỪA:
+– Một lớp chỉ được phép kế thừa từ một và chỉ một lớp cha mà thôi.
+– Nếu một lớp không khai báo kế thừa gì hết (như các lớp mà chúng ta đã thực hành từ các bài học trước), thì khi này hệ thống sẽ mặc định xem là nó đang kế thừa từ lớp Object.
+
+LỚP OBJECT - là lớp cơ sở nhất
+-Trong Java, nếu như bạn không chỉ định lớp cha cho một lớp nào đó, thì hệ thống mặc định cho lớp đó kế thừa từ một lớp, chính là lớp Object
+
+

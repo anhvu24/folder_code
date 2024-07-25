@@ -1,0 +1,17 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ThuNgay {
+
+	public static void main(String[] args) {
+		int in, out = 0;
+
+		for (out = 0; out < 10; out++) {
+			for (in = 0; in < 5; in++) {
+				System.out.println("in = " + in);
+			}
+			System.out.println("out = " + out);
+		}
+
+	}
+}

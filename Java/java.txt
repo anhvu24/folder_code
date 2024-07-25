@@ -1,0 +1,182 @@
+QUY TẮC ĐẶT TÊN:
+1-Packages: viết thường vd: package pokeranalyzer
+2-Class: CamelCase vd: class CustomerAccount
+3-Interfaces: CamelCase vd: interface CustomerAccount
+4-Method (phương thức): Mixed case vd: void calculateTax()
+5-Variables (biến): Mixed case vd: string firstName
+6-Constant (hằng số): uppercase vd: static final int MAX_HEIGHT 
+
+
+
+JRE: Java Runtime Environment - chương trình thông dịch sẽ đc cài đặt trên các HĐH
+JDK: Java SE (standart edition) Depvelopment Toolkit 
+src: viết tắt của source
+
+- Để lập trình: cần các thư viện và trình biên dịch javac
+- Để chạy và thực thi chương trình java: cần JRE
+- Javac và JRE được cung cấp trong gói JDK
+
+
+OOP - lập trình hướng đối tượng
+1. Tính Đa Hình (Polymorphism)
+- lớp có thể làm 1 hành động bằng nhiều cách khác nhau
+- có thể đạt được tính đa hình bằng 2 cách
++ nạp chồng (overloading) - nhiều hàm có cùng tên nhưng các thông số của hàm là khác nhau
++ ghi đè (overriding)
+
+2. Tính Kế Thừa (Inheritance)
+- các lớp con có thể kế thừa lại phương thức của lớp cha và sử dụng nó
+- lợi ích: tránh lặp lại code
+
+3. Tính Đóng Gói (Encapsulation)
+- access modifier (public, protected, private)
+- lợi ích: giúp bảo vệ biến, hàm khỏi sự can thiệp và lạm dụng từ bên ngoài
+
+4. Tính Trừu Tượng (Abstraction)
+- interface
+
+
+
+-----------------
+
+3. Cấu trúc của 1 lớp trong Java
+CLASS
+- trong class có thể khai báo biến (variable), phương thức (method)
+- hàm main: cho biết Java có thể chạy từ đâu
+
+4. Biến (variable) và cách khai báo biến 
+- Biến: vùng chứa giá trị, có thể đc sử dụng ở nhiều nơi trong chtrinh
+- tên biến ko đc bắt đầu bằng số
+- tên biến phân biệt chữ hoa, thường
+- tên biến ko có khoảng trắng
+vd: String thongBao = "Xin chao"
+
+5. Kiểu dữ liệu
+- có 2 dạng:
++ KDL nguyên thủy: int, long, float, double, boolean, char, ...
++ KDL đối tượng: String, Array, Double, ...
+phân biệt: nguyên thủy - viết thường, đối tượng - chữ cái đầu viết hoa
+
+
+6. Hằng số 
+- Hằng số: là những j ko thay đổi, cố định
+- Khai báo: final int tuoi = 10;
+- Quy tắc đặc tên giống với đặt tên biến 
+
+
+7. Ghi chú
+- Cách 1: // nội dung
+- Cách 2: /* nội dung nhiều dòng */
+- Cách 3: /** chú thích để tạo tài liệu hdan javadoc /
+
+9. Cách nhập dữ liệu từ bàn phím
+- Dùng hàm Scanner 
+Scanner sc = new Scanner(System.in);
+nhập tên: String ten = sc.nextLine();
+
+
+10. Chuyển đổi kiểu dữ liệu (ép kiểu)
+- Ép kiểu ngầm định
+vd: int a = 100 -> float c = a
+
+- Ép kiểu tường minh
+vd: float a = 10.7 -> int c = (int) a
+
+
+
+12. Các phép toán 1 ngôi
+- ++a: tăng giá trị của a trước, sau đó mới thực hiện câu lệnh tại vị trí đó
+- a++: thực hiện câu lệnh tại vị trí đó trước, sau đó mới tăng giá trị của a
+
+
+23. Vòng lặp WHILE
+- Được sử dụng khi KO xác định được sẽ lặp bao nhiêu lần 
+- Tiếp tục lặp khi điều kiện còn đúng 
+
+
+25. DO - WHILE
+- Vòng lặp được thực hiện ít nhất 1 lần 
+
+
+
+26. Cách sử dụng câu lệnh break, continue và return
+- break: ngưng vòng lặp
+(ko thể được sử dụng ngoài vòng lặp và switch)
+. mặc định, ko dùng label: ngưng vòng lặp chứa break
+. nếu chỉ định kiểu break label: ngưng vòng lặp được gắn label đó 
+
+- continue: ko ngưng vòng lặp, nhưng bỏ qa câu lệnh 
+(ko thể được sử dụng ngoài vòng lặp và switch)
+. mặc định, ko dùng label: ko ngưng vòng lặp, nhưng bỏ qa những câu lệnh phía bên dưới continue
+. nếu chỉ định kiểu continue label: ko ngưng vòng lặp, bỏ qua câu lệnh được gắn label đó 
+
+- return: ngưng luôn phương thức chứa return
+
+
+27. TRY - CATCH - FINALLY
+ngoại lệ thường được dùng để bắt những lỗi do người dùng gây ra
+mục đích: giúp chương trình ko bị ngưng đột ngột 
+- try: câu lệnh cố gắng thực hiện
+- catch: đc thực thi khi try gặp lỗi (câu lệnh trong try ko được thực hiện), giúp chương trình ko bị ngưng đột ngột 
+- finally: luôn được thực thi mặc dù try có gặp lỗi hay ko 
+
+
+27a. Mảng
+- khai báo mảng: int[] mang1; hoac int mang2[];
+
+
+30. 
+- Hàm Constructor cần lưu ý:
++ ko có KDL trả về
++ tên trùng tên lớp 
+
+- Từ "this": lấy thông tin từ nội bộ trong lớp 
+
+
+34.
+- Lớp "Object": là lớp đại diện cho tất cả các đối tượng
+- ko thể so sánh 2 đối tượng với "==" -> dùng hàm equals để so sánh 2 đối tượng có giống nhau hay ko
+- Hàm "hashcode":tạo ra chuỗi giá trị có thể đại diện cho 1 đối tượng
+
+35. 
+- khi vẽ sơ đồ lớp hoặc code: Class nào ko chứa những Class khác thì ưu tiên thực hiện trước
+
+39, 40, 41. Kế thừa 
+- mục đích: tiết kiệm tgian ko code trùng 
+- ko có đa kế thừa trong java
+
+
+42. Override - ghi đè phương thức
+- lớp con và lớp cha có mối quan hệ kế thừa
+- Phương thức ở lớp con phải có tên và tham số giống lớp cha
+
+
+43. Overload - nạp chồng phương thức
+- là việc tạo ra nhiều pthuc trong 1 lớp
++ cùng tên 
++ nhưng khác tham số truyền vào
+- Mục đích: tăng tính sử dụng cho các pthuc, cùng 1 pthuc nhưng có thể truyền vào nhiều loại tham số khác nhau 
+
+
+46. Interface
+- interface chỉ chứa các pthuc trừu tượng hoặc hằng số
+- tương tự lớp abstract, nó ko thể được khởi tạo thành đối tượng 
+- 1 class có thể triển khai (implements) 1 hoặc nhiều Interface
+- 1 Interface có thể kế thừa từ 1 Interface khác
+
+Mục đích: thu được tính trừu tượng hoàn toàn và đa kế thừa trong JAVA
+
+
+47. Gói - package
+- 2 kĩ thuật thao tác trên gói 
++ kĩ thuật đặt tên: mặc định viết bằng chữ thường
++ kĩ thuật điều khiển truy xuất 
+
+- Có 2 loại gói: 
++ gói được định nghĩa trước
++ gói được định nghĩa bởi người dùng 
+
+
+
+48. Phân biệt điều khiển truy xuất 
+
